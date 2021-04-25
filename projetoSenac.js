@@ -1,0 +1,1 @@
+alert ("Olá, esse é seu primeiro comando JavaScript");
