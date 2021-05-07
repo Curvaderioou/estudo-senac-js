@@ -27,10 +27,23 @@ situacao [4][0] = "Biologia";
     }
    }
   }
- 
+
+   
 for (linha = 0 ; linha < situacao.length; linha ++) { 
   for  (coluna = 0 ; coluna < 11 ; coluna ++){
     alert (situacao [linha] [coluna]);}  {alert ( "\n" )}; 
   }
 
 
+var nome = prompt ("Informa qual o aluno deseja pesquisar");
+var controle = 0;
+
+for (coluna = 0 ; coluna < 11 ; coluna++){
+  if (nome == media[0][coluna]){
+    alert (`O aluno ${media[0][coluna]} encontra-se na base de dados na posição ${coluna}`);
+    controle = 1;
+  }
+}
+if (controle ==0){
+ alert (`O aluno ${nome} não está na base de dados`)
+}
