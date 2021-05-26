@@ -5,6 +5,10 @@ var heightImc = height * height
 
 var imc = parseFloat(weight / heightImc)
 
+/*
+imc = weight/(heigth * height)
+*/
+
 console.log(imc)
 
 if (imc > 18.50 && imc < 24.99){
